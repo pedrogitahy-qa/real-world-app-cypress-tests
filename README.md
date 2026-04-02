@@ -56,6 +56,13 @@ The automated tests cover key user flows within the application:
 
 ## Project Structure
 
+## How to Run the Tests
+
+Clone the repository:
+git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests.git
+cd real-world-app-cypress-tests
+npm install
+npx cypress open
 
 
 
