@@ -56,6 +56,29 @@ The automated tests cover key user flows within the application:
 
 ## Project Structure
 
+real-world-app-cypress-tests
+│
+├── cypress
+│   ├── e2e
+│   │   ├── login.cy.js
+│   │   ├── signup.cy.js
+│   │   ├── transactions.cy.js
+│   │   ├── transfers.cy.js
+│   │
+│   ├── fixtures
+│   │
+│   ├── support
+│   │   ├── commands.js
+│   │   └── e2e.js
+│
+├── cypress.config.js
+├── package.json
+└── README.md
+
+
+This structure organizes the Cypress test suite following best practices,
+separating test scenarios, fixtures, and support commands for better maintainability.
+
 ## How to Run the Tests
 
 Clone the repository:
