@@ -44,6 +44,14 @@ Instead of using the `Page Object Model`, the tests focus on Cypress-native patt
 The automated tests cover key user flows within the application:
 
 - User sign-up
+
+## Test Execution Example
+
+The following demonstration shows the automated **user sign-up flow** executed with Cypress.  
+The test fills the registration form with valid credentials and verifies that the user can successfully create an account.
+
+![Signup Test](docs/gifs/signup-spec.gif)
+
 - Successful login
 - Invalid login validation
 - Send money
