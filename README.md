@@ -94,16 +94,7 @@ npx cypress open
 npx cypress run
 
 ```markdown
-### User Signup
-
-This test validates the user registration flow.
-
-![signup-test](./docs/signup-test.gif)
-
-### Successful Login
-
-### Send Money
-
+## Demonstrated Test Scenarios
 
 
 
