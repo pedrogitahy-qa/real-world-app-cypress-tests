@@ -27,7 +27,7 @@ https://github.com/cypress-io/cypress-realworld-app
 
 This project was implemented using **Cypress with Custom Commands** to improve test readability and reduce code duplication.
 
-Instead of using the 'Page Object Model', the tests focus on Cypress-native patterns and reusable commands to keep the test suite simple, maintainable, and expressive.
+Instead of using the `Page Object Model`, the tests focus on Cypress-native patterns and reusable commands to keep the test suite simple, maintainable, and expressive.
 
 ---
 
