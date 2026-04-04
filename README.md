@@ -2,7 +2,6 @@
 ![Cypress](https://img.shields.io/badge/Tested%20With-Cypress-04C38E)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Node.js](https://img.shields.io/badge/Runtime-Node.js-green)
-Cypress Tests | Passing
 
 ## Test Automation Project
 
@@ -57,8 +56,6 @@ The automated tests cover key user flows within the application:
 
 ## Project Structure
 
-## Project Structure
-
 ```
 real-world-app-cypress-tests
 │
@@ -84,24 +81,30 @@ This structure organizes the Cypress test suite following best practices, separa
 
 ## How to Run the Tests
 
-````markdown
-## How to Run the Tests
-
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests
 cd real-world-app-cypress-tests
+
 npm install
+
 npx cypress open
+
 npx cypress run
 
-````markdown
-## Future Improvements
+```markdown
+### User Signup
 
-- Add API test coverage
-- Integrate tests with GitHub Actions (CI)
-- Improve test data management
+This test validates the user registration flow.
+
+![signup-test](./docs/signup-test.gif)
+
+### Successful Login
+
+### Send Money
+
+
 
 
 
