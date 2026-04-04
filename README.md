@@ -54,6 +54,62 @@ The automated tests cover key user flows within the application:
 
 ---
 
+## Demonstrated Test Scenarios
+
+Below are demonstrations of the automated end-to-end test scenarios executed with Cypress.
+
+Each scenario represents a real user flow covered by the test suite.
+
+### User Signup
+
+Validates the user registration flow.
+
+![User Signup](./docs/gifs/signup.gif)
+
+### Successful Login
+
+Validates login with valid user credentials.
+
+![Successful Login](./docs/gifs/login-success.gif)
+
+### Invalid Login
+
+Validates system behavior when invalid credentials are used.
+
+![Invalid Login](./docs/gifs/login-invalid.gif)
+
+### Send Money
+
+Validates the money transfer flow between users.
+
+![Send Money](./docs/gifs/send-money.gif)
+
+### Send Money with Insufficient Funds
+
+Documents the behavior when a user attempts a transfer without sufficient balance.
+
+![Insufficient Funds](./docs/gifs/insufficient-funds.gif)
+
+### Transaction History
+
+Validates whether the transaction history is correctly displayed.
+
+![Transaction History](./docs/gifs/transaction-history.gif)
+
+### New User Transaction Flow
+
+Validates the first transaction flow for a newly created user.
+
+![New User Transaction Flow](./docs/gifs/new-user-transaction.gif)
+
+### Existing User Transaction Flow
+
+Validates the transaction behavior for an existing user.
+
+![Existing User Transaction Flow](./docs/gifs/existing-user-transaction.gif)
+
+---
+
 ## Project Structure
 
 ```
