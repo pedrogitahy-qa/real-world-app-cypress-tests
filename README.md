@@ -50,7 +50,7 @@ The automated tests cover key user flows within the application:
 The following demonstration shows the automated **user sign-up flow** executed with Cypress.  
 The test fills the registration form with valid credentials and verifies that the user can successfully create an account.
 
-![Signup Test](cypress/docs/signup-spec.gif)
+![Signup Test](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/signup-spec.gif)
 
 - Successful login
 - Invalid login validation
