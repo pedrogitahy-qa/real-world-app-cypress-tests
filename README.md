@@ -2,6 +2,7 @@
 ![Cypress](https://img.shields.io/badge/Tested%20With-Cypress-04C38E)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Node.js](https://img.shields.io/badge/Runtime-Node.js-green)
+Cypress Tests | Passing
 
 ## Test Automation Project
 
@@ -56,6 +57,9 @@ The automated tests cover key user flows within the application:
 
 ## Project Structure
 
+## Project Structure
+
+```
 real-world-app-cypress-tests
 │
 ├── cypress
@@ -63,29 +67,42 @@ real-world-app-cypress-tests
 │   │   ├── login.cy.js
 │   │   ├── signup.cy.js
 │   │   ├── transactions.cy.js
-│   │   ├── transfers.cy.js
+│   │   └── transfers.cy.js
 │   │
 │   ├── fixtures
 │   │
-│   ├── support
-│   │   ├── commands.js
-│   │   └── e2e.js
+│   └── support
+│       ├── commands.js
+│       └── e2e.js
 │
 ├── cypress.config.js
 ├── package.json
 └── README.md
+```
 
-
-This structure organizes the Cypress test suite following best practices,
-separating test scenarios, fixtures, and support commands for better maintainability.
+This structure organizes the Cypress test suite following best practices, separating test scenarios, fixtures, and support commands for better maintainability.
 
 ## How to Run the Tests
 
-Clone the repository:
-git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests.git
+````markdown
+## How to Run the Tests
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests
 cd real-world-app-cypress-tests
 npm install
 npx cypress open
+npx cypress run
+
+````markdown
+## Future Improvements
+
+- Add API test coverage
+- Integrate tests with GitHub Actions (CI)
+- Improve test data management
+
 
 
 
