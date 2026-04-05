@@ -1,4 +1,4 @@
-# Cypress E2E Tests — Real World App
+# Cypress End-to-End Test Automation — Real World App
 ![Cypress](https://img.shields.io/badge/Tested%20With-Cypress-04C38E)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Node.js](https://img.shields.io/badge/Runtime-Node.js-green)
@@ -57,6 +57,7 @@ Instead of using the `Page Object Model`, the tests focus on Cypress-native patt
 Below are demonstrations of the automated end-to-end test scenarios executed with Cypress.
 
 Each scenario represents a real user flow covered by the test suite.
+
 
 ### User Signup
 
@@ -142,6 +143,8 @@ real-world-app-cypress-tests
 
 This structure organizes the Cypress test suite following best practices, separating test scenarios, fixtures, and support commands for better maintainability.
 
+---
+
 ## How to Run the Tests
 
 Follow the steps below to execute the automated tests locally.
@@ -169,6 +172,7 @@ npx cypress open
 npx cypress run
 ```
 
+---
 
 ## Test Coverage
 
@@ -181,6 +185,8 @@ The automated tests cover the main user flows of the Real World App:
 • Transaction history visualization
 
 These scenarios represent critical user interactions in a financial application and ensure that the core system flows behave as expected.
+
+---
 
 ## Automation Strategy
 
