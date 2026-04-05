@@ -195,20 +195,6 @@ Key aspects of the automation approach include:
 
 This structure helps maintain readability and scalability as the test suite grows.
 
-## Automation Strategy
-
-The test suite focuses on validating critical end-to-end user flows using Cypress.
-
-Key aspects of the automation approach include:
-
-• Separation of test scenarios by feature  
-• Use of reusable commands to reduce duplication  
-• Clear test descriptions to improve maintainability  
-• Visual demonstrations (GIFs) to illustrate the executed scenarios
-
-This structure helps maintain readability and scalability as the test suite grows.
-
-
 
 
 
