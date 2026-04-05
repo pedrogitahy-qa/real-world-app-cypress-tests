@@ -144,20 +144,31 @@ This structure organizes the Cypress test suite following best practices, separa
 
 ## How to Run the Tests
 
+Follow the steps below to execute the automated tests locally.
+
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests
 cd real-world-app-cypress-tests
+```
+### 2. Install dependencies
 
+```bash
 npm install
+```
+### 3. Open Cypress Test Runner
 
+```bash
 npx cypress open
+```
 
+### 4. Run tests in headless mode
+
+```bash
 npx cypress run
+```
 
-```markdown
-## Demonstrated Test Scenarios
 
 ## Test Coverage
 
