@@ -69,42 +69,49 @@ The test fills the registration form with valid credentials and verifies that th
 ### Successful Login
 
 Validates login with valid user credentials.
+The test ensures that the system authenticates the user and redirects to the dashboard successfully.
 
 ![Successful Login](./docs/gifs/login-success.gif)
 
 ### Invalid Login
 
 Validates system behavior when invalid credentials are used.
+The test verifies that the application prevents authentication and displays the appropriate error message.
 
 ![Invalid Login](./docs/gifs/login-invalid.gif)
 
 ### Send Money
 
 Validates the money transfer flow between users.
+The test ensures that a logged-in user can successfully send money to another registered user.
 
 ![Send Money](./docs/gifs/send-money.gif)
 
 ### Send Money with Insufficient Funds
 
 Documents the behavior when a user attempts a transfer without sufficient balance.
+The test verifies that the system blocks the transaction and displays the appropriate validation message.
 
 ![Insufficient Funds](./docs/gifs/insufficient-funds.gif)
 
 ### Transaction History
 
-Validates whether the transaction history is correctly displayed.
+Validates that the system correctly records and displays past financial transactions.
+The test ensures that users can view their transaction history with accurate details.
 
 ![Transaction History](./docs/gifs/transaction-history.gif)
 
 ### New User Transaction Flow
 
-Validates the first transaction flow for a newly created user.
+Validates the transaction experience for a newly registered user.
+The test ensures that the application correctly handles initial interactions and transaction visibility.
 
 ![New User Transaction Flow](./docs/gifs/new-user-transaction.gif)
 
 ### Existing User Transaction Flow
 
-Validates the transaction behavior for an existing user.
+Validates transaction history and interactions for an existing user.
+The test confirms that previously executed transactions are correctly displayed and accessible.
 
 ![Existing User Transaction Flow](./docs/gifs/existing-user-transaction.gif)
 
