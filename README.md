@@ -73,7 +73,7 @@ The test ensures that the system authenticates the user and redirects to the das
 
 ![Successful Login](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/successful-login-spec.gif)
 
-### Invalid Login
+### Invalid SignUp
 
 Validates system behavior when invalid credentials are used.
 The test verifies that the application prevents authentication and displays the appropriate error message.
