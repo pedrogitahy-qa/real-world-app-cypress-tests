@@ -94,13 +94,6 @@ The test verifies that the system blocks the transaction and displays the approp
 
 ![Send Money Insufficient Funds](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/send-money-insufficient-funds-spec.gif)
 
-### Transaction History
-
-Validates that the system correctly records and displays past financial transactions.
-The test ensures that users can view their transaction history with accurate details.
-
-![Transaction History](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/transaction-history-spec.gif)
-
 ### New User Transaction Flow
 
 Validates the transaction experience for a newly registered user.
@@ -113,7 +106,7 @@ The test ensures that the application correctly handles initial interactions and
 Validates transaction history and interactions for an existing user.
 The test confirms that previously executed transactions are correctly displayed and accessible.
 
-![Existing User Transaction Flow](./docs/gifs/existing-user-transaction.gif)
+![Transaction History](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/transaction-history-spec.gif)
 
 ---
 
