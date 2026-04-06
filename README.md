@@ -66,48 +66,47 @@ The test fills the registration form with valid credentials and verifies that th
 
 ![Signup Test](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/signup-spec.gif)
 
-
 ### Successful Login
 
 Validates login with valid user credentials.
 The test ensures that the system authenticates the user and redirects to the dashboard successfully.
 
-![Successful Login](./docs/gifs/login-success.gif)
+![Successful Login](cypress/docs/successful-login-spec.gif)
 
 ### Invalid Login
 
 Validates system behavior when invalid credentials are used.
 The test verifies that the application prevents authentication and displays the appropriate error message.
 
-![Invalid Login](./docs/gifs/login-invalid.gif)
+![Invalid Credentials](cypress/docs/invalid-credentials-spec.gif)
 
 ### Send Money
 
 Validates the money transfer flow between users.
 The test ensures that a logged-in user can successfully send money to another registered user.
 
-![Send Money](./docs/gifs/send-money.gif)
+![Send Money](cypress/docs/send-money-spec.gif)
 
 ### Send Money with Insufficient Funds
 
 Documents the behavior when a user attempts a transfer without sufficient balance.
 The test verifies that the system blocks the transaction and displays the appropriate validation message.
 
-![Insufficient Funds](./docs/gifs/insufficient-funds.gif)
+![Send Money Insufficient Funds](cypress/docs/send-money-insufficient-funds-spec.gif)
 
 ### Transaction History
 
 Validates that the system correctly records and displays past financial transactions.
 The test ensures that users can view their transaction history with accurate details.
 
-![Transaction History](./docs/gifs/transaction-history.gif)
+![Transaction History](cypress/docs/transaction-history-spec.gif)
 
 ### New User Transaction Flow
 
 Validates the transaction experience for a newly registered user.
 The test ensures that the application correctly handles initial interactions and transaction visibility.
 
-![New User Transaction Flow](./docs/gifs/new-user-transaction.gif)
+![New User Transaction Flow](cypress/docs/new-user-transaction-flow-spec.gif)
 
 ### Existing User Transaction Flow
 
