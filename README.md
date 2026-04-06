@@ -89,8 +89,8 @@ The test ensures that a logged-in user can successfully send money to another re
 
 ### Send Money with Insufficient Funds
 
-This test verifies the application's behavior when a user attempts to transfer money without sufficient funds.
-The expected behavior is to block the transfer and display an error message. However, the transaction is incorrectly completed, revealing a potential bug.
+This test verifies the application's behavior when a user attempts to send money without sufficient balance.
+The expected behavior is that the system should block the transfer and display an appropriate validation message. However, the application incorrectly allows the transaction to proceed, revealing a potential bug in the insufficient funds validation rule.
 
 ![Send Money Insufficient Funds](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/send-money-insufficient-funds-spec.gif)
 
