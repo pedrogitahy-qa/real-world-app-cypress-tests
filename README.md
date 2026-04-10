@@ -1,7 +1,10 @@
 # Cypress End-to-End Test Automation — Real World App
+
 ![Cypress](https://img.shields.io/badge/Tested%20With-Cypress-04C38E)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
 ![Node.js](https://img.shields.io/badge/Runtime-Node.js-green)
+
+---
 
 ## Test Automation Project
 
