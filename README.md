@@ -112,6 +112,11 @@ The test ensures that the application correctly handles initial interactions and
 
 ## Project Structure
 
+The automation project follows a structured organization to keep tests maintainable and scalable.
+
+The test suite is organized using Cypress with reusable commands and modular test files.
+
+
 ```
 real-world-app-cypress-tests
 │
