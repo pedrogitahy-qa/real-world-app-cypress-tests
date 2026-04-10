@@ -169,6 +169,8 @@ npx cypress open
 npx cypress run
 ```
 
+These commands allow you to execute the complete automated test suite locally against the Real World App using Cypress.
+
 ---
 
 ## Test Coverage
