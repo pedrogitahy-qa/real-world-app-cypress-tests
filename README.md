@@ -18,7 +18,9 @@ The goal of this project is to demonstrate practical experience with **automated
 
 ## About the Real World App
 
-The Real World App is an open-source project created to simulate the behavior of a real banking application for testing purposes.
+The Real World App is an open-source demo application created by the Cypress team to simulate the behavior of a real banking platform. It provides a realistic environment for practicing end-to-end testing workflows involving authentication, account management, and financial transactions.
+
+The application reproduces typical user interactions such as user registration, login validation, transaction flows, and account balance updates. This makes it a practical system for validating automated testing strategies in a scenario that closely resembles real production applications.
 
 Original project repository:
 
@@ -28,9 +30,9 @@ https://github.com/cypress-io/cypress-realworld-app
 
 ## Testing Approach
 
-This project was implemented using **Cypress with Custom Commands** to improve test readability and reduce code duplication.
+The test automation strategy focuses on validating critical user workflows within the Real World App using end-to-end testing. Scenarios are designed to simulate realistic user behavior, ensuring that authentication, account interactions, and transaction processes function correctly across the application.
 
-Instead of using the `Page Object Model`, the tests focus on Cypress-native patterns and reusable commands to keep the test suite simple, maintainable, and expressive.
+The automated tests prioritize maintainability and clarity by organizing scenarios into logical test flows and reusing commands where appropriate. This approach helps ensure reliable validation of both positive and negative cases while keeping the test suite scalable and easy to maintain.
 
 ---
 
@@ -147,7 +149,9 @@ This structure organizes the Cypress test suite following best practices, separa
 
 ## How to Run the Tests
 
-Follow the steps below to execute the automated tests locally.
+This project uses Cypress to execute automated end-to-end tests against the Real World App application.
+
+Follow the steps below to install dependencies and run the test suite locally.
 
 ### 1. Clone the repository
 
