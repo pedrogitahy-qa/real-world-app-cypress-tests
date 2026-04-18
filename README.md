@@ -231,19 +231,20 @@ The automated tests cover the main user flows of the Real World App:
 • Validation of insufficient balance during transfers  
 • Transaction history visualization
 
-These scenarios represent critical user interactions in a financial application and ensure that the core system flows behave as expected.
+These scenarios represent critical user interactions in a financial application, ensuring that core functionalities such as authentication, transactions, and data consistency behave as expected.
 
 ---
 
 ## Automation Strategy
 
-The test suite focuses on validating critical end-to-end user flows using Cypress.
+The test suite focuses on validating critical end-to-end user flows of the Real World App using Cypress.
 
 Key aspects of the automation approach include:
 
-• Separation of test scenarios by feature  
-• Use of reusable commands to reduce duplication  
-• Clear test descriptions to improve maintainability  
-• Visual demonstrations (GIFs) to illustrate the executed scenarios
+- separation of test scenarios by feature
+- use of reusable commands and helper utilities
+- clear and objective test descriptions to improve maintainability
+- coverage of both successful and validation-focused flows
+- visual demonstrations (GIFs) to illustrate the executed scenarios
 
-This structure helps maintain readability and scalability as the test suite grows.
+This strategy helps keep the test suite readable, maintainable, and aligned with real user interactions across the application.
