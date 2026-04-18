@@ -180,31 +180,41 @@ Each directory has a specific role in the test architecture:
 
 ## How to Run the Tests
 
-This project uses Cypress to execute automated end-to-end tests against the Real World App application.
+This project uses Cypress to execute automated end-to-end tests against the Real World App.
 
 Follow the steps below to install dependencies and run the test suite locally.
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests
+git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests.git
 cd real-world-app-cypress-tests
+git checkout clean/rwa
 ```
 ### 2. Install dependencies
 
 ```bash
 npm install
 ```
-### 3. Open Cypress Test Runner
+### 3. Start the application
+
+```bash
+cd rwa-clean
+yarn dev
+```
+
+This will start the application locally at:
+
+```bash
+http://localhost:3000
+```
+
+### 4. Open Cypress
+
+In a new terminal, return to the project root and run:
 
 ```bash
 npx cypress open
-```
-
-### 4. Run tests in headless mode
-
-```bash
-npx cypress run
 ```
 
 These commands allow you to execute the complete automated test suite locally against the Real World App using Cypress.
