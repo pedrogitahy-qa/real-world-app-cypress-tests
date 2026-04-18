@@ -69,49 +69,49 @@ Each scenario represents a real user flow covered by the test suite.
 The following demonstration shows the automated user sign-up flow executed with Cypress.  
 The test fills the registration form with valid credentials and verifies that the user can successfully create an account.
 
-![Signup Test](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/signup-spec.gif)
+![Signup](docs/gifs/signup.gif)
 
 ### Successful Login
 
 Validates login with valid user credentials.
 The test ensures that the system authenticates the user and redirects to the dashboard successfully.
 
-![Successful Login](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/successful-login-spec.gif)
+![Successful Login](docs/gifs/successful-login.gif)
 
 ### Invalid SignUp
 
 Validates system behavior when invalid credentials are used.
 The test verifies that the application prevents authentication and displays the appropriate error message.
 
-![Invalid Login](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/invalid-login-spec.gif)
+![Invalid Credentials](docs/gifs/invalid-credentials.gif)
 
 ### Send Money
 
 Validates the money transfer flow between users.
 The test ensures that a logged-in user can successfully send money to another registered user.
 
-![Send Money](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/send-money-spec.gif)
+![Send Money](docs/gifs/send-money.gif)
 
 ### Send Money with Insufficient Funds
 
 This test verifies the application's behavior when a user attempts to send money without sufficient balance.
 The expected behavior is that the system should block the transfer and display an appropriate validation message. However, the application incorrectly allows the transaction to proceed, revealing a potential bug in the insufficient funds validation rule.
 
-![Send Money Insufficient Funds](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/send-money-insufficient-funds-spec.gif)
+![Send Money - Insufficient Funds](docs/gifs/send-money-insufficient-funds.gif)
 
 ### Existing User Transaction Flow
 
 Validates transaction history and interactions for an existing user.
 The test confirms that previously executed transactions are correctly displayed and accessible.
 
-![Transaction History](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/transaction-history-spec.gif)
+![Transaction History](docs/gifs/transaction-history.gif)
 
 ### New User Transaction Flow
 
 Validates the transaction experience for a newly registered user.
 The test ensures that the application correctly handles initial interactions and transaction visibility.
 
-![New User Transaction Flow](https://raw.githubusercontent.com/pedrogitahy-qa/real-world-app-cypress-tests/develop/cypress/docs/new-user-transaction-flow-spec.gif)
+![New User Transaction](docs/gifs/new-user-transaction.gif)
 
 ---
 
