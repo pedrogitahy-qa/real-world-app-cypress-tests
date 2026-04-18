@@ -75,7 +75,7 @@ Each scenario represents a real user flow covered by the test suite.
 Validates login with valid user credentials.
 The test ensures that the system authenticates the user and redirects to the dashboard successfully.
 
-![Successful Login](docs/gifs/successful-login.gif)
+![Successful Login](docs/gifs/login.gif)
 
 ### Invalid Login
 Verifies that the application blocks login attempts with invalid input and displays the correct error messages.
@@ -115,14 +115,14 @@ The expected behavior is that the system should block the transfer and display a
 Validates transaction history and interactions for an existing user.
 The test confirms that previously executed transactions are correctly displayed and accessible.
 
-![Transaction History](docs/gifs/transaction-history.gif)
+![Transaction History - Existing User](docs/gifs/transaction-history-existing-user.gif)
 
 ### Transaction History (New User) 
 
 Validates the transaction experience for a newly registered user.
 The test ensures that the application correctly handles initial interactions and transaction visibility.
 
-![New User Transaction](docs/gifs/new-user-transaction.gif)
+![Transaction History - New User](docs/gifs/transaction-history-new-user.gif)
 
 ---
 
