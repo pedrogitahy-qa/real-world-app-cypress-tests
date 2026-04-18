@@ -239,8 +239,6 @@ These scenarios represent critical user interactions in a financial application,
 
 The test suite focuses on validating critical end-to-end user flows of the Real World App using Cypress.
 
----
-
 Key aspects of the automation approach include:
 
 - separation of test scenarios by feature
@@ -250,3 +248,5 @@ Key aspects of the automation approach include:
 - visual demonstrations (GIFs) to illustrate the executed scenarios
 
 This strategy helps keep the test suite readable, maintainable, and aligned with real user interactions across the application.
+
+---
