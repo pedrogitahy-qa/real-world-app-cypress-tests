@@ -63,13 +63,12 @@ Below are demonstrations of the automated end-to-end test scenarios executed wit
 
 Each scenario represents a real user flow covered by the test suite.
 
-
-### User Signup
-
-The following demonstration shows the automated user sign-up flow executed with Cypress.  
-The test fills the registration form with valid credentials and verifies that the user can successfully create an account.
-
-![Signup](docs/gifs/signup.gif)
+| Positive Flow                     | Negative / Edge Case Flow            |
+|----------------------------------|-------------------------------------|
+| Successful Login                 | Invalid Login                       |
+| Successful Signup                | Invalid Signup                      |
+| Send Money (Valid Transaction)   | Send Money (Insufficient Funds)     |
+| Transaction History (Existing)   | Transaction History (New User)      |
 
 ### Successful Login
 
@@ -78,6 +77,18 @@ The test ensures that the system authenticates the user and redirects to the das
 
 ![Successful Login](docs/gifs/successful-login.gif)
 
+### Invalid Login
+Verifies that the application blocks login attempts with invalid input and displays the correct error messages.
+
+![Invalid Login](docs/gifs/invalid-login.gif)
+
+### Successful Signup
+
+The following demonstration shows the automated user sign-up flow executed with Cypress.  
+The test fills the registration form with valid credentials and verifies that the user can successfully create an account.
+
+![Signup](docs/gifs/signup.gif)
+
 ### Invalid SignUp
 
 Validates system behavior when invalid credentials are used.
@@ -85,28 +96,28 @@ The test verifies that the application prevents authentication and displays the 
 
 ![Invalid Credentials](docs/gifs/invalid-credentials.gif)
 
-### Send Money
+### Send Money (Valid Transaction)
 
 Validates the money transfer flow between users.
 The test ensures that a logged-in user can successfully send money to another registered user.
 
 ![Send Money](docs/gifs/send-money.gif)
 
-### Send Money with Insufficient Funds
+### Send Money (Insufficient Funds)
 
 This test verifies the application's behavior when a user attempts to send money without sufficient balance.
 The expected behavior is that the system should block the transfer and display an appropriate validation message. However, the application incorrectly allows the transaction to proceed, revealing a potential bug in the insufficient funds validation rule.
 
 ![Send Money - Insufficient Funds](docs/gifs/send-money-insufficient-funds.gif)
 
-### Existing User Transaction Flow
+### Transaction History (Existing) 
 
 Validates transaction history and interactions for an existing user.
 The test confirms that previously executed transactions are correctly displayed and accessible.
 
 ![Transaction History](docs/gifs/transaction-history.gif)
 
-### New User Transaction Flow
+### Transaction History (New User) 
 
 Validates the transaction experience for a newly registered user.
 The test ensures that the application correctly handles initial interactions and transaction visibility.
