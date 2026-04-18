@@ -167,7 +167,14 @@ real-world-app-cypress-tests/
 └── tsconfig.json
 ```
 
-This structure organizes the Cypress test suite following best practices, separating test scenarios, fixtures, and support commands for better maintainability.
+This structure organizes the test suite in a clear and maintainable way, separating test scenarios, reusable data, and support utilities.
+
+Each directory has a specific role in the test architecture:
+
+- **e2e** – contains the automated end-to-end test scenarios  
+- **fixtures** – stores reusable test data used across scenarios  
+- **support** – includes custom Cypress commands and helper utilities  
+- **docs/gifs** – contains visual evidence of test execution used in the README  
 
 ---
 
