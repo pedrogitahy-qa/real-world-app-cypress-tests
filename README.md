@@ -134,24 +134,37 @@ The test suite is organized using Cypress with reusable commands and modular tes
 
 
 ```
-real-world-app-cypress-tests
-│
-├── cypress
-│   ├── e2e
+real-world-app-cypress-tests/
+├── cypress/
+│   ├── e2e/
+│   │   ├── invalid-credentials.cy.js
+│   │   ├── invalid-login.cy.js
 │   │   ├── login.cy.js
+│   │   ├── send-money.cy.js
 │   │   ├── signup.cy.js
-│   │   ├── transactions.cy.js
-│   │   └── transfers.cy.js
-│   │
-│   ├── fixtures
-│   │
-│   └── support
-│       ├── commands.js
-│       └── e2e.js
-│
+│   │   ├── transaction-history-existing-user.cy.js
+│   │   └── transaction-history-new-user.cy.js
+│   ├── fixtures/
+│   │   └── users.json
+│   └── support/
+│       ├── commands.ts
+│       ├── e2e.ts
+│       └── utils.ts
+├── docs/
+│   └── gifs/
+│       ├── invalid-credentials.gif
+│       ├── invalid-login.gif
+│       ├── login.gif
+│       ├── send-money.gif
+│       ├── send-money-insufficient-funds.gif
+│       ├── signup.gif
+│       ├── transaction-history-existing-usergif
+│       └── transaction-history-new-usergif
+├── .gitignore
 ├── cypress.config.js
 ├── package.json
-└── README.md
+├── README.md
+└── tsconfig.json
 ```
 
 This structure organizes the Cypress test suite following best practices, separating test scenarios, fixtures, and support commands for better maintainability.
