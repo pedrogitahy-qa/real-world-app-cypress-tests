@@ -189,8 +189,7 @@ Follow the steps below to install dependencies and run the test suite locally.
 ```bash
 git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests.git
 cd real-world-app-cypress-tests
-git checkout clean/rwa
-```
+git checkout main```
 ### 2. Install dependencies
 
 ```bash
