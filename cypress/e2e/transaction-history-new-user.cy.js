@@ -40,7 +40,8 @@ describe('Transaction History - New User', () => {
     cy.contains('Mine').click()
 
     cy.contains('No Transactions').should('be.visible')
-    cy.get('[data-test="transaction-list-empty-create-transaction-button"]').should('be.visible')
-
+cy.get('[data-test="transaction-list-empty-create-transaction-button"]')
+  .scrollIntoView()
+  .should('be.visible')
   })
 })
