@@ -8,6 +8,7 @@ describe('Successful Login', () => {
     cy.get('input[name="username"]').type(user.validUser.username)
     cy.get('input[name="password"]').type(user.validUser.password)
     cy.get('button[type="submit"]').click()
-    cy.get('[fill-rule="nonzero"]').should('be.visible')
+    cy.location('pathname').should('eq', '/')
+    cy.get('[data-test="sidenav-signout"]').should('be.visible')
     })
 })
