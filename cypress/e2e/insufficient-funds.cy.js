@@ -13,9 +13,9 @@ describe('Send Money - Insufficient funds', () => {
     cy.get('[data-test="nav-top-new-transaction"]').should('be.visible').click()
 
     cy.get('[data-test="user-list-search-input"]')
-      .should('be.visible')
-      .click({ force: true })
-      .type('Ted Parisian', { force: true })
+  .should('be.visible')
+  .click()
+  .type('Ted Parisian')
 
     cy.contains('Ted Parisian').click()
 
@@ -24,6 +24,5 @@ describe('Send Money - Insufficient funds', () => {
 
     cy.contains('button', 'Pay').click()
 
-    cy.contains('Test insufficient funds').should('be.visible')
-  })
+  cy.contains('h2', 'Paid $5,000.00 for Test insufficient funds').should('be.visible')  })
 })
