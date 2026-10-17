@@ -12,10 +12,10 @@ describe('Send Money flow', () => {
 
     cy.get('[data-test="nav-top-new-transaction"]').should('be.visible').click()
 
-    cy.get('[data-test="user-list-search-input"]')
-      .should('be.visible')
-      .click({ force: true })
-      .type('Ted Parisian', { force: true })
+   cy.get('[data-test="user-list-search-input"]')
+  .should('be.visible')
+  .click()
+  .type('Ted Parisian')
 
     cy.contains('Ted Parisian').click()
 
@@ -24,6 +24,6 @@ describe('Send Money flow', () => {
 
     cy.contains('button', 'Pay').click()
 
-    cy.contains('Payment').should('be.visible')
+    cy.contains('h2', 'Paid $500.00 for Payment').should('be.visible')
   })
 })
