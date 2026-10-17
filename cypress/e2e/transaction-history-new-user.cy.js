@@ -1,4 +1,7 @@
 describe('Transaction History - New User', () => {
+before(() => {
+  cy.viewport(1280, 900)
+})
 
   beforeEach(() => {
     cy.visit('/login')
@@ -19,17 +22,23 @@ describe('Transaction History - New User', () => {
     cy.contains('button', 'Sign Up').click()
 
     // login após cadastro
-    cy.get('input[name="username"]').should('be.visible').type(username)
+    cy.get('input[name="username"]').should('be.visible')
+    cy.get('input[name="username"]').type(username)
     cy.get('input[name="password"]').type('pedro123')
-    cy.get('button[type="submit"]').click()
+    cy.get('button[type="submit"]').should('have.length', 1).click()
 
     // primeiro passo onboarding
-    cy.get('[data-test="user-onboarding-next"]').should('be.visible').click()
+    cy.get('[data-test="user-onboarding-next"]')
+  .should('be.visible')
+  .should('be.enabled')
+  .click()
 
     // criar conta bancária
     cy.get('input[name="bankName"]').should('be.visible').type('GTH BANK')
     cy.get('input[name="routingNumber"]').type('123456789')
-    cy.get('input[name="accountNumber"]').type('987654321')
+    cy.get('input[name="accountNumber"]')
+  .should('be.enabled')
+  .type('987654321')
 
     cy.contains('button', 'Save').click()
 
@@ -40,8 +49,7 @@ describe('Transaction History - New User', () => {
     cy.contains('Mine').click()
 
     cy.contains('No Transactions').should('be.visible')
-cy.get('[data-test="transaction-list-empty-create-transaction-button"]')
-  .scrollIntoView()
-  .should('be.visible')
+    cy.get('[data-test="transaction-list-empty-create-transaction-button"]').should('be.visible')
+
   })
 })
