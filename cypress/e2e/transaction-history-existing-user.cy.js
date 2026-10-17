@@ -12,5 +12,8 @@ describe('Transaction History - Existing User', () => {
 
     cy.contains('Mine').click()
     cy.get('[data-test="transaction-list"]').should('be.visible')
+    cy.get('[data-test="transaction-list"]')
+  .find('li')
+  .should('have.length.at.least', 1)
   })
 })
