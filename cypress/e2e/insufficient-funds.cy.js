@@ -14,8 +14,7 @@ describe('Send Money - Insufficient funds', () => {
 
     cy.get('[data-test="user-list-search-input"]')
   .should('be.visible')
-  .click()
-  .type('Ted Parisian')
+  .type('Ted Parisian', { scrollBehavior: false })
 
     cy.contains('Ted Parisian').click()
 

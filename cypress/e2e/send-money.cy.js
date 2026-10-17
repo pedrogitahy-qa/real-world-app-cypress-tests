@@ -1,6 +1,10 @@
 const user = require('../fixtures/users.json')
 
 describe('Send Money flow', () => {
+  before(() => {
+  cy.viewport(1280, 900)
+})
+
   beforeEach(() => {
     cy.visit('/login')
   })
@@ -12,10 +16,9 @@ describe('Send Money flow', () => {
 
     cy.get('[data-test="nav-top-new-transaction"]').should('be.visible').click()
 
-   cy.get('[data-test="user-list-search-input"]')
+    cy.get('[data-test="user-list-search-input"]')
   .should('be.visible')
-  .click()
-  .type('Ted Parisian')
+  .type('Ted Parisian', { scrollBehavior: false })
 
     cy.contains('Ted Parisian').click()
 
