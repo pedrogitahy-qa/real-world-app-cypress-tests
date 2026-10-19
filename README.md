@@ -180,45 +180,53 @@ Each directory has a specific role in the test architecture:
 
 ## How to Run the Tests
 
-This project uses Cypress to execute automated end-to-end tests against the Real World App.
+This test suite runs against the Cypress Real World App. The application and the automated tests are maintained in separate repositories.
 
-Follow the steps below to install dependencies and run the test suite locally.
+### Prerequisites
 
-### 1. Clone the repository
+- Git
+- Node.js (22.15.0 recommended by the Real World App)
+- Yarn Classic (v1) for the application
+- npm for the test suite
+
+### 1. Clone and start the application
+
+```bash
+git clone https://github.com/cypress-io/cypress-realworld-app.git
+cd cypress-realworld-app
+yarn install
+yarn dev
+```
+
+Keep this terminal running. The application uses ports 3000 (frontend) and 3001 (API).
+
+### 2. Clone and install the test suite
+
+Open a second terminal:
 
 ```bash
 git clone https://github.com/pedrogitahy-qa/real-world-app-cypress-tests.git
 cd real-world-app-cypress-tests
-git checkout main
-```
-
-### 2. Install dependencies
-
-```bash
 npm install
 ```
-### 3. Start the application
+
+### 3. Run the automated tests
+
+With the Real World App running, execute from the test suite directory:
 
 ```bash
-cd rwa-clean
-yarn dev
+npm test
 ```
 
-This will start the application locally at:
+To open the interactive Cypress runner instead:
 
 ```bash
-http://localhost:3000
+npm run test:open
 ```
 
-### 4. Open Cypress
+The test suite uses `http://localhost:3000` as its base URL.
 
-In a new terminal, return to the project root and run:
-
-```bash
-npx cypress open
-```
-
-These commands allow you to execute the complete automated test suite locally against the Real World App using Cypress.
+For additional application setup details, refer to the [official Cypress Real World App repository](https://github.com/cypress-io/cypress-realworld-app).
 
 ---
 
