@@ -134,9 +134,11 @@ The test suite is organized using Cypress with reusable commands and modular tes
 
 
 ```
+
 real-world-app-cypress-tests/
 ├── cypress/
 │   ├── e2e/
+│   │   ├── insufficient-funds.cy.js
 │   │   ├── invalid-credentials.cy.js
 │   │   ├── invalid-login.cy.js
 │   │   ├── login.cy.js
@@ -158,13 +160,15 @@ real-world-app-cypress-tests/
 │       ├── send-money.gif
 │       ├── send-money-insufficient-funds.gif
 │       ├── signup.gif
-│       ├── transaction-history-existing-usergif
-│       └── transaction-history-new-usergif
+│       ├── transaction-history-existing-user.gif
+│       └── transaction-history-new-user.gif
 ├── .gitignore
 ├── cypress.config.js
+├── package-lock.json
 ├── package.json
 ├── README.md
 └── tsconfig.json
+
 ```
 
 This structure organizes the test suite in a clear and maintainable way, separating test scenarios, reusable data, and support utilities.
